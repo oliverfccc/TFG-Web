@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TFG: Implementación y Análisis de la Metodología BIM con Desarrollo de un Gemelo Digital, orientado a la Gestión Energética. C.F.G.S. Proyectos de Edificación, IES Islas Filipinas.">
+  <title>BIM & Gemelo Digital — TFG Edificación 2025/26</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-bim">BIM</span>
+        <span class="logo-sep">+</span>
+        <span class="logo-dt">GD</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Proyecto</a></li>
+        <li><a href="#dimensions">Dimensiones</a></li>
+        <li><a href="#digital-twin">Gemelo Digital</a></li>
+        <li><a href="#cases">Casos Reales</a></li>
+        <li><a href="#document" class="nav-cta">Documento</a></li>
+        <li><a href="#team">Equipo</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">C.F.G.S. Proyectos de Edificación &nbsp;·&nbsp; Convocatoria Junio 2025/2026</div>
+      <h1 class="hero-title">
+        Implementación y Análisis<br>
+        de la Metodología <span class="highlight-bim">BIM</span><br>
+        con Desarrollo de un<br>
+        <span class="highlight-dt">Gemelo Digital</span>
+      </h1>
+      <p class="hero-subtitle">Orientado a la Gestión Energética</p>
+      <div class="hero-authors">
+        <span>Oliver Funes Corrales</span>
+        <span class="dot">·</span>
+        <span>Alba Lorenzana Vizosa</span>
+        <span class="dot">·</span>
+        <span>Carlos Martínez de Jaime</span>
+      </div>
+      <div class="hero-meta">
+        <span class="badge-meta">IES Islas Filipinas</span>
+        <span class="badge-meta">Entrega: 08/06/2026</span>
+        <span class="badge-meta">Tutora: Mabel Lozano</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#document" class="btn-primary">Ver Documento</a>
+        <a href="#about" class="btn-secondary">Explorar Proyecto</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="card-icon">⬡</div>
+          <h2>¿Qué es BIM?</h2>
+          <div class="highlight-box">
+            <strong>BIM NO ES SOLO REVIT</strong>
+          </div>
+          <p>La Metodología BIM (Building Information Modeling) es un sistema de trabajo <strong>colaborativo</strong> que permite crear y gestionar información digital de un edificio a lo largo de todo su ciclo de vida.</p>
+          <p>Integra geometría, materiales, costes, planificación y mantenimiento en un modelo centralizado que evoluciona con el edificio — desde el boceto hasta la demolición.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">◎</div>
+          <h2>Objetivo del Proyecto</h2>
+          <p>Investigar de manera aplicada la diferencia entre un modelado de información y la gestión digital real, demostrando cómo un modelo digital ayuda a que un edificio funcione durante todo su ciclo de vida.</p>
+          <div class="objective-goal">
+            <p>Transformar un <strong>modelo estático</strong> en una <strong>réplica viva y dinámica</strong> mediante integración de datos en tiempo real, dotando al edificio de una herramienta inteligente para la <strong>gestión energética</strong> y el <strong>mantenimiento predictivo</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DIMENSIONES ═══ -->
+  <section id="dimensions">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Metodología</span>
+        <h2>Las Siete Dimensiones BIM</h2>
+        <p>BIM va mucho más allá de las 3 dimensiones. Cada capa añade información para mejorar decisiones técnicas, económicas y operativas a lo largo de todo el ciclo de vida.</p>
+      </div>
+      <div class="dimensions-grid">
+        <div class="dim-card reveal" style="--dim-color: #6c8ebf;">
+          <div class="dim-number">1D</div>
+          <div class="dim-name">Concepto</div>
+          <div class="dim-desc">Definición estratégica del proyecto. Objetivos, requisitos del cliente y documentos base del trabajo colaborativo.</div>
+        </div>
+        <div class="dim-card reveal" style="--dim-color: #9b7fe8;">
+          <div class="dim-number">2D</div>
+          <div class="dim-name">Boceto</div>
+          <div class="dim-desc">Estándares, plantillas y criterios comunes entre disciplinas. Base para la coherencia y eficiencia del modelo.</div>
+        </div>
+        <div class="dim-card reveal" style="--dim-color: #0090c8;">
+          <div class="dim-number">3D</div>
+          <div class="dim-name">Modelado</div>
+          <div class="dim-desc">Modelado paramétrico: coordinación entre arquitectura, estructuras e instalaciones. Detección de interferencias (Clash Detection).</div>
+        </div>
+        <div class="dim-card reveal" style="--dim-color: #f39c12;">
+          <div class="dim-number">4D</div>
+          <div class="dim-name">Planificación</div>
+          <div class="dim-desc">El factor tiempo. Simulación de fases de ejecución y anticipación de conflictos logísticos antes de que ocurran en obra.</div>
+        </div>
+        <div class="dim-card reveal" style="--dim-color: #e74c3c;">
+          <div class="dim-number">5D</div>
+          <div class="dim-name">Costes</div>
+          <div class="dim-desc">Mediciones automáticas del modelo, presupuestos dinámicos y control económico actualizado ante cualquier cambio de diseño.</div>
+        </div>
+        <div class="dim-card reveal" style="--dim-color: #00b894;">
+          <div class="dim-number">6D</div>
+          <div class="dim-name">Sostenibilidad</div>
+          <div class="dim-desc">Eficiencia energética desde el diseño. Simulaciones de consumo y apoyo a certificaciones LEED, BREEAM o Passivehouse.</div>
+        </div>
+        <div class="dim-card dim-card-full reveal" style="--dim-color: #8e44ad;">
+          <div class="dim-header">
+            <div class="dim-number">7D</div>
+            <div class="dim-name">Seguimiento y Mantenimiento</div>
+          </div>
+          <div class="dim-desc">Facility Management: gestión de operación, inspecciones y mantenimiento durante toda la vida útil. El modelo As-Built se convierte en la base de datos visual del edificio en uso — el punto de partida del Gemelo Digital.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GEMELO DIGITAL ═══ -->
+  <section id="digital-twin">
+    <div class="container">
+      <div class="section-header section-header-dark">
+        <span class="section-label section-label-dark">Evolución</span>
+        <h2>Del BIM al Gemelo Digital</h2>
+        <p>Cuando el modelo BIM se conecta a sensores IoT y datos en tiempo real, se convierte en un <strong>Gemelo Digital</strong> — una réplica viva del edificio físico.</p>
+      </div>
+      <div class="twin-comparison">
+        <div class="twin-card twin-bim reveal">
+          <div class="twin-icon">📐</div>
+          <h3>Modelo BIM</h3>
+          <p class="twin-question">"¿Cómo <em>debería</em> ser el edificio?"</p>
+          <ul>
+            <li>Fotografía detallada del diseño</li>
+            <li>Información estructurada y estática</li>
+            <li>Planos e instalaciones documentados</li>
+            <li>Documento histórico de la construcción</li>
+          </ul>
+          <div class="twin-tag">As-Built</div>
+        </div>
+        <div class="twin-arrow-wrap">
+          <div class="twin-arrow">→</div>
+          <div class="twin-arrow-label">sensores IoT<br>datos en tiempo real</div>
+        </div>
+        <div class="twin-card twin-dt reveal">
+          <div class="twin-icon-live">
+            <span class="live-dot"></span>
+          </div>
+          <h3>Gemelo Digital</h3>
+          <p class="twin-question">"¿Cómo está funcionando <em>ahora</em>?"</p>
+          <ul>
+            <li>Película en vivo del edificio</li>
+            <li>Monitorización energética en tiempo real</li>
+            <li>Mantenimiento predictivo (10× más barato)</li>
+            <li>Detección de fallos antes de que ocurran</li>
+          </ul>
+          <div class="twin-tag twin-tag-live">LIVE &nbsp;·&nbsp; As-Is</div>
+        </div>
+      </div>
+      <div class="twin-benefits">
+        <div class="benefit reveal">
+          <span class="benefit-icon">⚡</span>
+          <strong>Hasta 40% ahorro</strong>
+          <span>en costes por Clash Detection temprana</span>
+        </div>
+        <div class="benefit reveal">
+          <span class="benefit-icon">🔧</span>
+          <strong>10× más barato</strong>
+          <span>mantenimiento predictivo vs. reactivo de emergencia</span>
+        </div>
+        <div class="benefit reveal">
+          <span class="benefit-icon">🌱</span>
+          <strong>Eficiencia energética</strong>
+          <span>optimización continua del consumo y las emisiones</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CASOS REALES ═══ -->
+  <section id="cases">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Trabajo de Campo</span>
+        <h2>Casos Reales Analizados</h2>
+        <p>Información obtenida directamente en obra, con acceso a modelos BIM activos, visitas a pie de obra y datos técnicos propios.</p>
+      </div>
+      <div class="cases-grid">
+        <div class="case-card reveal">
+          <div class="case-badge case-badge-complete">Gemelo Digital Completo</div>
+          <div class="case-flag">🇨🇱</div>
+          <h3>Gran Sala Sinfónica VM20</h3>
+          <div class="case-subtitle">CEAC — Santiago de Chile</div>
+          <div class="case-stats">
+            <div class="stat"><span class="stat-n">32.000 m²</span><span class="stat-l">Superficie</span></div>
+            <div class="stat"><span class="stat-n">13</span><span class="stat-l">Plantas</span></div>
+            <div class="stat"><span class="stat-n">1.200</span><span class="stat-l">Aforo</span></div>
+          </div>
+          <p>Edificio de uso cultural con gemelo digital implementado de forma completa durante toda la obra. Modelo Revit de alta precisión visualizado con <strong>TwinBIM de Dalux</strong> en realidad aumentada a pie de obra. Presupuestos automáticos y correspondencia casi perfecta modelo-realidad.</p>
+          <div class="case-tags">
+            <span>Dalux TwinBIM</span>
+            <span>Realidad aumentada</span>
+            <span>Presupuestos automáticos</span>
+            <span>Gemelo completo</span>
+          </div>
+        </div>
+        <div class="case-card reveal">
+          <div class="case-badge case-badge-bim">BIM Avanzado</div>
+          <div class="case-flag">🇪🇸</div>
+          <h3>Edificio VPO Los Berrocales</h3>
+          <div class="case-subtitle">Ferrovial — Madrid, España</div>
+          <div class="case-stats">
+            <div class="stat"><span class="stat-n">7.260 m²</span><span class="stat-l">Sup. habitable</span></div>
+            <div class="stat"><span class="stat-n">8</span><span class="stat-l">Plantas</span></div>
+            <div class="stat"><span class="stat-n">64</span><span class="stat-l">Viviendas</span></div>
+          </div>
+          <p>Acceso directo durante el periodo de formación en empresa. BIM como herramienta de trabajo diaria vía <strong>Revit + Dalux</strong>: coordinación de instalaciones, resolución de interferencias en patinillos y toma de decisiones en tiempo real a pie de obra.</p>
+          <div class="case-tags">
+            <span>Revit + Dalux</span>
+            <span>Acceso directo a obra</span>
+            <span>Visitas in situ</span>
+          </div>
+          <div class="case-note">⚠ Alta digitalización BIM, sin integración de sensores IoT — aún no es gemelo digital completo.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DOCUMENTO ═══ -->
+  <section id="document">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Memoria del Proyecto</span>
+        <h2>Documento Escrito</h2>
+        <p>Accede al documento completo del proyecto intermodular — 43 páginas de marco teórico, análisis técnico y casos reales.</p>
+      </div>
+      <div class="doc-container">
+        <div class="doc-actions">
+          <a href="assets/TFG.pdf" download class="btn-download">⬇&nbsp; Descargar PDF</a>
+          <span class="doc-info">C.F.G.S. Proyectos de Edificación &nbsp;·&nbsp; Junio 2026</span>
+        </div>
+        <div class="pdf-wrapper">
+          <iframe
+            src="assets/TFG.pdf#toolbar=0&navpanes=0"
+            class="pdf-embed"
+            title="TFG — BIM y Gemelo Digital">
+            <div class="pdf-fallback">
+              <p>Tu dispositivo no puede mostrar el PDF en línea.</p>
+              <a href="assets/TFG.pdf" class="btn-primary">Descargar documento</a>
+            </div>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EQUIPO ═══ -->
+  <section id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Autores</span>
+        <h2>El Equipo</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-avatar" style="--av-a: #0090c8; --av-b: #00c4d4;">OF</div>
+          <div class="team-name">Oliver Funes Corrales</div>
+          <div class="team-role">C.F.G.S. Proyectos de Edificación</div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar" style="--av-a: #8e44ad; --av-b: #9b59b6;">AL</div>
+          <div class="team-name">Alba Lorenzana Vizosa</div>
+          <div class="team-role">C.F.G.S. Proyectos de Edificación</div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar" style="--av-a: #00b894; --av-b: #00cec9;">CM</div>
+          <div class="team-name">Carlos Martínez de Jaime</div>
+          <div class="team-role">C.F.G.S. Proyectos de Edificación</div>
+        </div>
+      </div>
+      <div class="supervisor">
+        <span class="supervisor-label">Supervisado por</span>
+        <span class="supervisor-name">Mabel Lozano</span>
+        <span class="supervisor-sep">·</span>
+        <span class="supervisor-school">IES Islas Filipinas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <span class="logo-bim">BIM</span>
+        <span class="logo-sep">+</span>
+        <span class="logo-dt">GD</span>
+      </div>
+      <p>Proyecto Intermodular &nbsp;·&nbsp; C.F.G.S. Proyectos de Edificación</p>
+      <p>IES Islas Filipinas &nbsp;·&nbsp; Convocatoria Junio 2025/2026</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
